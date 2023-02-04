@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Cities } from './core/mock-geo';
+import { WeatherService } from './core/weather.service';
+import { WeatherDto } from './core/weather.dto';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'weatherForecast';
+  geos = Cities;
+  weather?: WeatherDto;
+
+  constructor(
+    private weatherService: WeatherService
+  ) {
+  }
+
+  selectGeo(geo: string) {
+    this.weatherService.getWeather(geo)
+      .subscribe((weather) => {
+        this.weather = weather;
+      });
+  }
+
 }
