@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Cities } from '../../core/mock-geo';
+import { Cities } from '../../../core/mock-geo';
 
 @Pipe({
   name: 'translateCity'
