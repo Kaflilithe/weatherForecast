@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateCityPipe } from './common/pipes/translate-city.pipe';
+import { HeaderComponent } from './common/components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,8 @@ import { TranslateCityPipe } from './common/pipes/translate-city.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-
+    HttpClientModule,
+    HeaderComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,13 +1,11 @@
-<div class="navbar bg-base-100 shadow-lg">
-  <a class="btn btn-ghost normal-case text-xl">Weather today</a>
-</div>
-<div class="main p-7 flex">
+
+<app-header></app-header>
   <ul class="menu bg-base-100 w-56 pl-14">
     <li
       class="text-left"
       (click)="selectGeo(geo.key)"
       *ngFor="let geo of geos | keyvalue"
-      type="submit">
+      >
       <a [class.active]="geo.key === selectedGeo">{{geo.value}}</a>
     </li>
   </ul>
@@ -16,7 +14,6 @@
     <p>Текущая температура: {{weather.main.temp}}°</p>
     <p>Скорость ветра: {{weather.wind.speed}} м/с</p>
   </div>
-</div>
 
 
 
