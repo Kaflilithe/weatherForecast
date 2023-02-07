@@ -1,0 +1,9 @@
+<ul class="menu bg-base-100 w-56">
+  <li
+    class="text-left"
+    (click)="select.emit(geo.key)"
+    *ngFor="let geo of geos | keyvalue"
+  >
+    <a [class.active]="geo.key === selectedCity">{{geo.value}}</a>
+  </li>
+</ul>

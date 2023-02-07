@@ -1,0 +1,9 @@
+<div class="main p-7 flex">
+  <app-cities-list
+    [selectedCity]="selectedCity"
+    (select)="selectGeo($event)">
+  </app-cities-list>
+  <app-weather-card
+    [weather]="weather">
+  </app-weather-card>
+</div>

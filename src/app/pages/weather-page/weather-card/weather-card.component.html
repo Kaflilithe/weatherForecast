@@ -1,0 +1,6 @@
+<div class="weather pl-8" *ngIf="weather">
+  <h2 class="text-4xl pb-3">{{weather.name | translateCity}}</h2>
+  <p>Текущая температура: {{weather.main.temp}}°</p>
+  <p>Скорость ветра: {{weather.wind.speed}} м/с</p>
+</div>
+
