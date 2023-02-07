@@ -4,13 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { TranslateCityPipe } from './common/pipes/translate-city.pipe';
 import { HeaderComponent } from './common/components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TranslateCityPipe
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -21,4 +19,5 @@ import { HeaderComponent } from './common/components/header/header.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

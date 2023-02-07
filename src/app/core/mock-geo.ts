@@ -3,4 +3,4 @@ export const Cities: Record<string, string> = {
   'Saint Petersburg': 'Санкт-Петербург',
   'Ekaterinburg': 'Екатеринбург',
   'Vladivostok': 'Владивосток'
-}
+};
